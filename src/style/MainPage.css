@@ -1,0 +1,130 @@
+.main-page-wrapper {
+  display: flex;
+  margin-top: 12rem;
+  margin-bottom: 4rem;
+  align-items: flex-end;
+}
+
+.main-text-area {
+  flex-basis: 50%;
+}
+
+.main-text-area .first-text,
+.heading,
+.description {
+  color: #fff;
+}
+
+.main-text-area .first-text p {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 34px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #d0d6f9;
+  margin-bottom: 24px;
+}
+
+.main-text-area .heading {
+  font-size: 150px;
+  font-family: "Bellefair", serif;
+  margin-bottom: 40px;
+}
+
+.main-text-area .description p {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  color: #d0d6f9;
+  line-height: 32px;
+  width: 80%;
+}
+
+.main-cta-btn {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  animation: mover 3s infinite alternate;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-40px);
+  }
+}
+
+.main-cta-btn a {
+  color: #0b0d17;
+  background-color: #fff;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17.5rem;
+  height: 17.5rem;
+  border-radius: 50%;
+  font-family: "Bellefair", serif;
+  transition: 0.5s ease-in-out;
+}
+
+.main-cta-btn a:hover {
+  box-shadow: rgb(255, 255, 255, 0.1) 0px 0px 0px 60px;
+}
+
+/* media*/
+
+@media screen and (max-width: 992px) {
+  .main-page-wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6.5rem;
+    margin-bottom: 2rem;
+    gap: 5rem;
+  }
+
+  .main-text-area {
+    text-align: center;
+  }
+
+  .main-text-area .first-text p {
+    font-size: 20px;
+  }
+
+  .main-text-area .description p {
+    width: 100%;
+    font-size: 16px;
+    padding: 0 40px;
+  }
+
+  .main-cta-btn a {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main-page-wrapper {
+    margin-top: 3.5rem;
+  }
+
+  .main-text-area .first-text p {
+    font-size: 16px;
+  }
+
+  .main-text-area .heading {
+    font-size: 80px;
+    margin-bottom: 25px;
+  }
+
+  .main-text-area .description p {
+    font-size: 15px;
+    padding: 0;
+  }
+
+  .main-cta-btn a {
+    width: 13rem;
+    height: 13rem;
+  }
+}

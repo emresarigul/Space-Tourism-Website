@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Condensed", sans-serif;
+  background-image: url(../assets/home/background-home-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+body.destination-page {
+  background-image: url(../assets/destination/background-destination-desktop.jpg);
+}
+
+body.crew-page {
+  background-image: url(../assets/crew/background-crew-desktop.jpg);
+}
+
+body.technology-page {
+  background-image: url(../assets/technology/background-technology-desktop.jpg);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+/* media*/
+
+@media screen and (max-width: 992px) {
+  body {
+    background-image: url(../assets/home/background-home-tablet.jpg);
+  }
+
+  body.destination-page {
+    background-image: url(../assets/destination/background-destination-tablet.jpg);
+  }
+
+  body.crew-page {
+    background-image: url(../assets/crew/background-crew-tablet.jpg);
+  }
+
+  body.technology-page {
+    background-image: url(../assets/technology/background-technology-tablet.jpg);
+  }
+}
+@media screen and (max-width: 576px) {
+  body {
+    background-image: url(../assets/home/background-home-mobile.jpg);
+  }
+
+  body.destination-page {
+    background-image: url(../assets/destination/background-destination-mobile.jpg);
+  }
+
+  body.crew-page {
+    background-image: url(../assets/crew/background-crew-mobile.jpg);
+  }
+
+  body.technology-page {
+    background-image: url(../assets/technology/background-technology-mobile.jpg);
+  }
+  .container {
+    padding: 0 26px;
+  }
+}
