@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-//import technologyData from "../technology-data";
 import vehicle from "../assets/technology/image-launch-vehicle-portrait.jpg";
 import spaceCapsule from "../assets/technology/image-space-capsule-portrait.jpg";
 import spaceport from "../assets/technology/image-spaceport-portrait.jpg";

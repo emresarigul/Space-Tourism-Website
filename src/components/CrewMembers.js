@@ -4,7 +4,6 @@ import anousheh from "../assets/crew/image-anousheh-ansari.png";
 import mark from "../assets/crew/image-mark-shuttleworth.png";
 import victor from "../assets/crew/image-victor-glover.png";
 import data from "../data.json";
-//import crewData from "../crew-data";
 
 const CrewMembers = () => {
   const crewArr = [douglas, mark, victor, anousheh];
